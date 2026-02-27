@@ -14,7 +14,7 @@ const startServer = async () => {
     // await createDb();
 
     // Sync models
-    await sequelize.sync({ force: true });
+    await sequelize.sync({ alter: true });
     console.log("Database synced successfully");
 
     // Seed initial data
