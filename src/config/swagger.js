@@ -11,7 +11,7 @@ const swaggerDefinition = {
   },
   servers: [
     {
-      url: "http://localhost:5000/api",
+      url: "https://personal-finance-tracker.ilul-tech.com/",
       description: "Development server",
     },
   ],
