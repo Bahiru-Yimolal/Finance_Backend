@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 const startServer = async () => {
   try {
     // Ensure database exists
-    await createDb();
+    // await createDb();
 
     // Sync models
     await sequelize.sync({ alter: true });
