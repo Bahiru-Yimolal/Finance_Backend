@@ -1,16 +1,17 @@
-require("dotenv").config();
+require("dotenv").config(); // Load environment variables
 
 const { Sequelize } = require("sequelize");
 
+// Create Sequelize instance using .env variables
 const sequelize = new Sequelize(
-  process.env.DB_NAME,
-  process.env.DB_USER,
-  process.env.DB_PASSWORD,
+  `postgres://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`,
+  //   `postgres://postgres:1234@localhost:5432/daily_task_management`,
   {
-    host: process.env.DB_HOST,
-    port: process.env.DB_PORT,
     dialect: "postgres",
-    logging: false,
+    logging: false, // Optional: Disable query logging
+    // logging: console.log,
+
+
   }
 );
 
