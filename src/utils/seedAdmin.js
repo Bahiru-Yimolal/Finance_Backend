@@ -5,7 +5,7 @@ const seedAdmin = async () => {
     try {
         const adminUsername = "admin";
         const adminEmail = "admin@example.com";
-        const adminPassword = "admin!";
+        const adminPassword = "StrongPass123!";
 
         // Check if admin already exists
         const existingAdmin = await User.findOne({
