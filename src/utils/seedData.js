@@ -4,9 +4,9 @@ const bcrypt = require("bcrypt");
 const { Sequelize } = require("sequelize");
 
 // Import models
-const UserModel = require("../models/user");
-const TransactionModel = require("../models/transaction");
-const CategoryModel = require("../models/category");
+const UserModel = require("../models/userModel");
+const TransactionModel = require("../models/transactionModel");
+const CategoryModel = require("../models/categoryModel");
 
 /*
 --------------------------------------------------
